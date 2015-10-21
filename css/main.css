@@ -11,9 +11,9 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 /*
@@ -97,7 +97,7 @@ textarea {
 
 * {
     box-sizing: border-box;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
         /*COLOR SCHEME
@@ -120,49 +120,100 @@ textarea {
 Gobal
 ======================================== */
 body {
-    padding: 35px;
+  padding: 0 1%;
+  /*background-color: #3B393A;*/
 }
+
+.bodyimgone {
+  background-image: url("../images/germanPotatoSalad.jpg");
+  /*background-color: gray;*/
+}
+
+.recipefloat {
+  position: relative;
+  width: 72%;
+  display: inline-block;
+  float: right;
+  margin-top: 100px;
+}
+
+aside {
+  position: absolute;
+  width: 22%;
+  display: block;
+  margin-top: 100px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 /* ========================================
 TEXT STYLES
 ======================================== */
 a {
-    color: #ffffff;
-    text-decoration: none;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 300;
-    font-size: 35px;
-    display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  display: inline-block;
 }
 
 /* LVHA-order:link — :visited — :hover — :active */
 
 a:link {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 /*a:visited {
-    color: black;
+  color: black;
 }*/
 
 a:hover {
-    color: rgba(250, 75, 75, .5);
+  color: rgba(250, 75, 75, .5);
 }
 
 a:active, a:focus {
-    color: #FBD811;
+  color: #FBD811;
 }
 
 p {
   font-style: 'Open Sans Condensed', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  color: #FBD811;
+  background-color: #3B393A;
+  padding: 10px 40px;
 }
 
 /*transition for a smoother color change*/
 
 h1 > a {
-  padding: 30px;
-  font-size: 80px;
+  padding: 0 40px;
+  font-size: 60px;
   font-family: 'Covered By Your Grace', cursive;
+}
+
+h2 {
+  margin-top: 300px;
+  padding: 40px;
+  font-size: 48px;
+  font-family: 'Covered By Your Grace', cursive;
+  z-index: 500;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+h3 {
+  margin: 10px;
+  text-align: center;
+  font-size: 44px;
+  font-family: 'Covered By Your Grace', cursive;
+  z-index: 500;
+  position: relative;
+  /*background-color: rgba(255, 255, 255, 0.5);*/
+}
+
+h4 {
+  font-size: 18px;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 /* ========================================
@@ -172,7 +223,17 @@ header, footer {
     border-bottom: 5px solid #FBD811;
     background-color: #3B393A;
 }
+
+header {
+  height: 100px;
+  width: 98%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
 footer {
+    height: 50px;
     padding: 10px;
     clear: both;
     color: #ffffff;
@@ -182,49 +243,63 @@ footer {
 /* ========================================
 NAVIGATION 
 ======================================== */
-
-nav h1, nav ul {
+nav li, nav h1, h2 {
   display: inline-block;
 }
 
-ul {
-  padding-left: 0px;
-  padding-right: 0px;
+nav ul {
   float: right;
-  padding: 75px;
+  padding: 0 40px;
+  margin-top: 5px;
+}
+
+li {
+  padding: 0;
 }
 
 /* ========================================
 BUTTONS
 ======================================== */
+.btn {
+  background-color: #D7E0DB;
+  height: 30px;
+  width: 75px;
+}
 
+.btn[disabled] {
+  background-color: purple;
+}
 
 /* ========================================
 IMAGES
 ======================================== */
 .floatimages {
-    text-align: center;
+  text-align: center;
 }
 
-img {
-    margin: 30px;
-    height: 200px;
-    width: 200px;
+.homeimages {
+  margin: 0 auto;
+  height: 75%;
+  width: 75%;
+  display: inline-block;
 }
 
+/*.pageimages {
+  width: 90%;
+  position: absolute;
+  z-index: -1000;
+  background-size: cover;
+}*/
 
+#imgcarousel {
+  height: 300px;
+  padding-top: 450px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+#image {
+  width: 170px;
+  height: 175px;
+}
 
 /* ==========================================================================
    Helper classes

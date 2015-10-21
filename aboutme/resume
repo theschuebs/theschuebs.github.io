@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Erika Schuebel</title>
+		<link rel="stylesheet" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+		<link rel="icon" type="image/ico" href=favicon.ico>
+	</head>
+	<body>
+
+		<h1>Erika K. Schuebel</h1>
+
+		<hr>
+
+		<nav>
+			<a href="index.html">About Me</a> | <strong>Resume</strong>
+		</nav>
+
+		<hr>
+
+		<h2>RESUME</h2>
+						
+		<p>My <strong>goal</strong> is to combine my <i>education</i> background with <i>web development</i> to launch a new career and redefine myself as an advocate for women and girls in science and technology. </p>
+
+		<h3>EXPERIENCE</h3>
+					
+		<ul>		
+			<li><strong>6th Grade Teacher</strong> 2007 - 2015. Gilbert, Arizona. Certified Elementary (K-9) in Illinois and Arizona. Endorsed in Social Science, Middle School, and (SEI) Structured English Immersion.
+			</li>
+
+			<br>
+
+			<li><strong>Lacrosse Assistant Coach</strong> 2006-2007. Vernon Hills High School, Illinois.</li> 
+
+			<br>
+
+		</ul>
+
+		<h3>EDUCATION</h3>
+				
+	<ul>
+		<li><strong>General Assembly</strong> Front-End Web Development &ndash; 2015</li>
+		<li>Professional Development (over 200 hours) &ndash; 2007-2015</li>
+		<li>Study Abroad Semester Freiburg, Germany &ndash; 2005 </li>
+		<li><strong>University of Iowa</strong> B.A. in Elementary Education and German &ndash; 2002-2006</li>
+		<li>Libertyville High School &ndash; 2002
+	</ul>
+
+	</body>
+</html>
