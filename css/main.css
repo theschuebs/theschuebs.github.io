@@ -126,23 +126,30 @@ body {
 
 .bodyimgone {
   background-image: url("../images/germanPotatoSalad.jpg");
-  /*background-color: gray;*/
+  background-size: cover;
 }
 
 .recipefloat {
+  padding: 0 10px;
   position: relative;
-  width: 72%;
+  width: 73%;
   display: inline-block;
   float: right;
   margin-top: 100px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 aside {
+  padding: 0 10px;
   position: absolute;
-  width: 22%;
+  width: 24%;
   display: block;
-  margin-top: 100px;
+  margin-top: 160px;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.lower {
+  margin-top: 100px;
 }
 
 /* ========================================
@@ -154,7 +161,8 @@ a {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 300;
   font-size: 24px;
-  display: inline-block;
+  /*display: inline-block;*/
+  /*margin: 0;*/
 }
 
 /* LVHA-order:link — :visited — :hover — :active */
@@ -172,18 +180,22 @@ a:hover {
 }
 
 a:active, a:focus {
-  color: #FBD811;
+  color: rgba(251, 216, 17, 0.8);
 }
 
 p {
   font-style: 'Open Sans Condensed', sans-serif;
   font-size: 18px;
-  color: #FBD811;
+  color: rgba(251, 216, 17, 0.8);
   background-color: #3B393A;
   padding: 10px 40px;
 }
 
 /*transition for a smoother color change*/
+
+h1 {
+  margin-bottom: 0;
+}
 
 h1 > a {
   padding: 0 40px;
@@ -208,7 +220,6 @@ h3 {
   font-family: 'Covered By Your Grace', cursive;
   z-index: 500;
   position: relative;
-  /*background-color: rgba(255, 255, 255, 0.5);*/
 }
 
 h4 {
@@ -220,8 +231,10 @@ h4 {
 HEADER + FOOTER
 ======================================== */
 header, footer { 
-    border-bottom: 5px solid #FBD811;
-    background-color: #3B393A;
+  border-bottom: 5px solid #FBD811;
+  background: linear-gradient(bottom, rgba(59,57,58,1), rgba(59,57,58,.5));
+  background: -webkit-linear-gradient(bottom, rgba(59,57,58,1), rgba(59,57,58,.5));
+  background: -moz-linear-gradient(bottom, rgba(59,57,58,1), rgba(59,57,58,.5));
 }
 
 header {
@@ -233,11 +246,11 @@ header {
 }
 
 footer {
-    height: 50px;
-    padding: 10px;
-    clear: both;
-    color: #ffffff;
-    font-family: 'Open Sans Condensed', sans-serif;
+  height: 50px;
+  padding: 10px;
+  clear: both;
+  color: #ffffff;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 /* ========================================
@@ -264,41 +277,49 @@ BUTTONS
   background-color: #D7E0DB;
   height: 30px;
   width: 75px;
+  border-radius: 10px;
 }
 
 .btn[disabled] {
-  background-color: purple;
+  background-color: #ffffff;
+  color: #D7E0DB;
+}
+
+#wrapper {
+  padding: 20px;
 }
 
 /* ========================================
 IMAGES
 ======================================== */
-.floatimages {
-  text-align: center;
-}
-
 .homeimages {
-  margin: 0 auto;
-  height: 75%;
   width: 75%;
-  display: inline-block;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
 }
 
-/*.pageimages {
-  width: 90%;
-  position: absolute;
-  z-index: -1000;
-  background-size: cover;
+/*.imgcontainer {
+  display: block;
+  margin: 0 auto;
 }*/
 
-#imgcarousel {
-  height: 300px;
-  padding-top: 450px;
+
+.imgcontainer h3 {
+  border-radius: 0 0 10px 10px;
+  height: 120px;
+  text-align: center;
+  width: 75%;
+  bottom: 128px;
+  left: 148px;
+  background: linear-gradient(bottom, rgba(59,57,58,1), rgba(59,57,58,.4));
+  background: -webkit-linear-gradient(bottom, rgba(59,57,58,1), rgba(59,57,58,.4));
+  background: -moz-linear-gradient(bottom, rgba(59,57,58,1), rgba(59,57,58,.4));
 }
 
-#image {
-  width: 170px;
-  height: 175px;
+#imgcarousel {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /* ==========================================================================
