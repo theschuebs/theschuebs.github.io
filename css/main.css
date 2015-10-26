@@ -121,7 +121,6 @@ Gobal
 ======================================== */
 body {
   padding: 0 1%;
-  /*background-color: #3B393A;*/
 }
 
 .bodyimgone {
@@ -161,8 +160,6 @@ a {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 300;
   font-size: 24px;
-  /*display: inline-block;*/
-  /*margin: 0;*/
 }
 
 /* LVHA-order:link — :visited — :hover — :active */
@@ -214,7 +211,6 @@ h2 {
 }
 
 h3 {
-  margin: 10px;
   text-align: center;
   font-size: 44px;
   font-family: 'Covered By Your Grace', cursive;
@@ -274,14 +270,16 @@ li {
 BUTTONS
 ======================================== */
 .btn {
-  background-color: #D7E0DB;
+  color: #fff;
+  background-color: #3B393A;
   height: 30px;
   width: 75px;
+  border: none;
   border-radius: 10px;
 }
 
 .btn[disabled] {
-  background-color: #ffffff;
+  background-color: rgba(256, 256, 256, 0.5);
   color: #D7E0DB;
 }
 
@@ -292,34 +290,40 @@ BUTTONS
 /* ========================================
 IMAGES
 ======================================== */
-.homeimages {
+.img-container {
+  position: relative;
   width: 75%;
-  margin: 0 auto;
+  margin: 20px auto;
   display: block;
   border-radius: 10px;
+  overflow: hidden;
 }
 
-/*.imgcontainer {
-  display: block;
-  margin: 0 auto;
-}*/
+.home-images {
+  max-width: 100%;
+}
 
-
-.imgcontainer h3 {
-  border-radius: 0 0 10px 10px;
-  height: 120px;
+.img-container h3 {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  margin: 0;
   text-align: center;
-  width: 75%;
-  bottom: 128px;
-  left: 148px;
+  border-radius: 0 0 10px 10px;
   background: linear-gradient(bottom, rgba(59,57,58,1), rgba(59,57,58,.4));
   background: -webkit-linear-gradient(bottom, rgba(59,57,58,1), rgba(59,57,58,.4));
   background: -moz-linear-gradient(bottom, rgba(59,57,58,1), rgba(59,57,58,.4));
 }
 
+@media screen and (max-width: 600px) {
+  .img-container h3 {
+    font-size: 18px;
+  }
+}
+
 #imgcarousel {
   text-align: center;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 /* ==========================================================================
