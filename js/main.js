@@ -38,4 +38,13 @@ $('#prev').on('click', function(){
 	}
 });
 
+// Media Query javascript
+$('.hamburger').on('click', function() {
+	$('.menu').addClass('open');
+	if($('.menu').hasClass('open')) {
+		$('.menu').removeClass('open');
+	} else {
+		$('menu').addClass('open');
+	}
+	});
 

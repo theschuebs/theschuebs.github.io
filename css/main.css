@@ -181,7 +181,7 @@ a:active, a:focus {
 }
 
 p {
-  font-style: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 18px;
   color: rgba(251, 216, 17, 0.8);
   background-color: #3B393A;
@@ -190,12 +190,8 @@ p {
 
 /*transition for a smoother color change*/
 
-h1 {
-  margin-bottom: 0;
-}
-
-h1 > a {
-  padding: 0 40px;
+h1 > a { 
+  padding: 0 0 0 40px;
   font-size: 60px;
   font-family: 'Covered By Your Grace', cursive;
 }
@@ -252,13 +248,13 @@ footer {
 /* ========================================
 NAVIGATION 
 ======================================== */
-nav li, nav h1, h2 {
+header li, header h1 {
   display: inline-block;
 }
 
-nav ul {
+header nav {
   float: right;
-  padding: 0 40px;
+  padding: 0  40px 0 0;
   margin-top: 5px;
 }
 
@@ -266,6 +262,29 @@ li {
   padding: 0;
 }
 
+header h1 {
+  float: left;
+}
+
+header {
+  clear: both;
+}
+
+.hamburger {
+  display: none;
+}
+
+.line {
+  width: 33px;
+  height: 4px;
+  background: #E7E6DD;
+  margin: 5px;
+  border-radius:1px;
+}
+
+.open {
+  height: 100px;
+}
 /* ========================================
 BUTTONS
 ======================================== */
@@ -325,6 +344,39 @@ IMAGES
   margin-bottom: 20px;
   overflow: hidden;
 }
+
+/* ========================================
+MEDIA QUERIES
+======================================== */
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: inline-block;
+  }
+  .menu {
+    height: 0;
+    overflow: hidden;
+  }
+
+  nav li {
+    width: 100%;
+  }
+}
+
+/*When screen is smaller than 320px, reduce h1 to 24px*/
+@media screen and (max-width: 320px) {
+  .logo {
+    font-size: 24px;
+  }
+
+/*@media screen and (min-width: 768px) {
+  .nav ul li {
+    display: block;
+    float: none;
+  }
+}*/
+
+
 
 /* ==========================================================================
    Helper classes
