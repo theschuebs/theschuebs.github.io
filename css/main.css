@@ -25,13 +25,13 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 /*
@@ -39,12 +39,12 @@ html {
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -67,9 +67,9 @@ video {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -77,7 +77,7 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 /* ==========================================================================
@@ -85,10 +85,10 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 /* ==========================================================================
@@ -96,24 +96,24 @@ textarea {
    ========================================================================== */
 
 * {
-    box-sizing: border-box;
-    /*border: 1px solid red;*/
+  box-sizing: border-box;
+  /*border: 1px solid red;*/
 }
 
-        /*COLOR SCHEME
+    /*COLOR SCHEME
 
-            White - #ffffff
-            Light Grey - #D7E0DB
-            Dark Grey - #3B393A
-            Grey/Black(text color) - #070707
-            Yellow - #FBD811
-            Red - #EC3E36
-        
-        FONT FAMILY: Google Fonts
+        White - #ffffff
+        Light Grey - #D7E0DB
+        Dark Grey - #3B393A
+        Grey/Black(text color) - #070707
+        Yellow - #FBD811
+        Red - #EC3E36
+    
+    FONT FAMILY: Google Fonts
 
-            font-family: 'Covered By Your Grace', cursive;
-            font-family: 'Open Sans Condensed', sans-serif;
-            font-family: 'Lato', sans-serif;
+        font-family: 'Covered By Your Grace', cursive;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-family: 'Lato', sans-serif;
 */
 
 /* ========================================
@@ -271,6 +271,9 @@ header {
 }
 
 .hamburger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   display: none;
 }
 
@@ -282,9 +285,6 @@ header {
   border-radius:1px;
 }
 
-.open {
-  height: 100px;
-}
 /* ========================================
 BUTTONS
 ======================================== */
@@ -333,12 +333,6 @@ IMAGES
   background: -moz-linear-gradient(bottom, rgba(59,57,58,1), rgba(59,57,58,.4));
 }
 
-@media screen and (max-width: 600px) {
-  .img-container h3 {
-    font-size: 18px;
-  }
-}
-
 #imgcarousel {
   text-align: center;
   margin-bottom: 20px;
@@ -348,35 +342,53 @@ IMAGES
 /* ========================================
 MEDIA QUERIES
 ======================================== */
+@media screen and (max-width: 600px) {
+  .img-container h3 {
+    font-size: 20px;
+  }
+  
+  h1 > a {
+    font-size: 34px;
+  }
+
+  aside {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .recipefloat {
+    margin-top: 0;
+    position: relative;
+    width: 100%;
+  }
 
 @media screen and (max-width: 768px) {
   .hamburger {
     display: inline-block;
   }
+
   .menu {
     height: 0;
     overflow: hidden;
   }
 
-  nav li {
+  .open {
+    height: 34px;
     width: 100%;
+    position: absolute;
+    top: 35px;
+    left: 0px;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  a {
+    font-size: 20px;
   }
 }
-
-/*When screen is smaller than 320px, reduce h1 to 24px*/
-@media screen and (max-width: 320px) {
-  .logo {
-    font-size: 24px;
-  }
-
-/*@media screen and (min-width: 768px) {
-  .nav ul li {
-    display: block;
-    float: none;
-  }
-}*/
-
-
 
 /* ==========================================================================
    Helper classes
@@ -388,8 +400,8 @@ MEDIA QUERIES
  */
 
 .hidden {
-    display: none !important;
-    visibility: hidden;
+  display: none !important;
+  visibility: hidden;
 }
 
 /*
@@ -398,14 +410,14 @@ MEDIA QUERIES
  */
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 /*
@@ -416,12 +428,12 @@ MEDIA QUERIES
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }
 
 /*
@@ -429,7 +441,7 @@ MEDIA QUERIES
  */
 
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /*
@@ -446,12 +458,12 @@ MEDIA QUERIES
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /* ==========================================================================
@@ -478,23 +490,23 @@ MEDIA QUERIES
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
+  *,
+  *:before,
+  *:after {
+      background: transparent !important;
+      color: #000 !important; /* Black prints faster:
+                                 http://www.sanbeiji.com/archives/953 */
+      box-shadow: none !important;
+      text-shadow: none !important;
     }
 
     a,
     a:visited {
-        text-decoration: underline;
+      text-decoration: underline;
     }
 
     a[href]:after {
-        content: " (" attr(href) ")";
+      content: " (" attr(href) ")";
     }
 
     abbr[title]:after {
@@ -508,13 +520,13 @@ MEDIA QUERIES
 
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
-        content: "";
+      content: "";
     }
 
     pre,
     blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
+      border: 1px solid #999;
+      page-break-inside: avoid;
     }
 
     /*
@@ -523,27 +535,27 @@ MEDIA QUERIES
      */
 
     thead {
-        display: table-header-group;
+      display: table-header-group;
     }
 
     tr,
     img {
-        page-break-inside: avoid;
+      page-break-inside: avoid;
     }
 
     img {
-        max-width: 100% !important;
+      max-width: 100% !important;
     }
 
     p,
     h2,
     h3 {
-        orphans: 3;
-        widows: 3;
+      orphans: 3;
+      widows: 3;
     }
 
     h2,
     h3 {
-        page-break-after: avoid;
+      page-break-after: avoid;
     }
 }
