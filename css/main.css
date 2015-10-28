@@ -321,7 +321,7 @@ IMAGES
 ======================================== */
 .img-container {
   position: relative;
-  max-width: 75%;
+  width: 75%;
   margin: 20px auto;
   display: block;
   border-radius: 10px;
