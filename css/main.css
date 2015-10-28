@@ -123,8 +123,18 @@ body {
   padding: 0 1%;
 }
 
-.bodyimgone {
+.body-img-one {
   background-image: url("../images/germanPotatoSalad.jpg");
+  background-size: cover;
+}
+
+.body-img-two {
+  background-image: url("../images/sauerbraten.jpg");
+  background-size: cover;
+}
+
+.body-img-three {
+  background-image: url("../images/dumplings.jpg");
   background-size: cover;
 }
 
@@ -135,7 +145,7 @@ body {
   display: inline-block;
   float: right;
   margin-top: 100px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 aside {
@@ -144,7 +154,7 @@ aside {
   width: 24%;
   display: block;
   margin-top: 160px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .lower {
@@ -182,7 +192,7 @@ a:active, a:focus {
 
 p {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   color: rgba(251, 216, 17, 0.8);
   background-color: #3B393A;
   padding: 10px 40px;
@@ -362,6 +372,10 @@ MEDIA QUERIES
     position: relative;
     width: 100%;
   }
+
+/*Need to add:
+hamburger for zoom in larger than...
+iphone 6 landscape */ 
 
 @media screen and (max-width: 768px) {
   .hamburger {
