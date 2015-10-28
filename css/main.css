@@ -352,32 +352,11 @@ IMAGES
 /* ========================================
 MEDIA QUERIES
 ======================================== */
-@media screen and (max-width: 600px) {
-  .img-container h3 {
-    font-size: 20px;
-  }
-  
-  h1 > a {
-    font-size: 34px;
-  }
-
-  aside {
-    position: relative;
-    width: 100%;
-    margin-top: 100px;
-  }
-
-  .recipefloat {
-    margin-top: 0;
-    position: relative;
-    width: 100%;
-  }
-
 /*Need to add:
 hamburger for zoom in larger than...
 iphone 6 landscape */ 
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .hamburger {
     display: inline-block;
   }
@@ -403,6 +382,31 @@ iphone 6 landscape */
     font-size: 20px;
   }
 }
+
+
+
+@media screen and (max-width: 600px) {
+  .img-container h3 {
+    font-size: 20px;
+  }
+  
+  h1 > a {
+    font-size: 34px;
+  }
+
+  aside {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .recipefloat {
+    margin-top: 0;
+    position: relative;
+    width: 100%;
+  }
+
+
 
 /* ==========================================================================
    Helper classes
